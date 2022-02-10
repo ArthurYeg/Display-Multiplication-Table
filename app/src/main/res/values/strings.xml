@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Display Multiplication Table</string>
+    <string name="btn_click">Calculate</string>
+    <string name="tv_table">Table</string>
+    <string name="et_input">Number</string>
+    <string name="tv_name">Multiplication Table</string>
+</resources>
