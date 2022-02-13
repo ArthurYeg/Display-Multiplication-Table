@@ -21,8 +21,12 @@ class MainActivity : AppCompatActivity() {
         btn_click.setOnClickListener {
             Toast.makeText(this, "You clicked the button", Toast.LENGTH_SHORT).show()
 
-
-            val number = et_input.getText().toString()
+  if (TextUtils.isEmpty(number)) {
+                // тут информируем пользователя
+                et_input.error = "Please enter your height"
+                et_input.requestFocus()
+                return@setOnClickListener
+            }
             val num = number.toInt()
 
             var result = " "
